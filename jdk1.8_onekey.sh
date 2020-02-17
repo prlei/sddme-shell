@@ -7,7 +7,8 @@
 # 为了使配置的环境变量生效，安装完成后你应该重新登陆。
 
 echo "Start install the JDK version jdk-8u192-linux-x64"
-jvmpath=/opt/java/
+jvmpath=/opt/java
+jdkdirname=jdk1.8.0_192
 # 不存在
 if [ ! -d "$jvmpath" ]; then
     echo "正在创建$jvmpath目录"
@@ -28,7 +29,6 @@ if [ -f "$jdkfile" ]; then
     echo "CLASSPATH=.:%JAVA_HOME%/lib/dt.jar:%JAVA_HOME%/lib/tools.jar" >> ~/.bashrc
     source ~/.bashrc
     echo "配置环境成功"
-
     echo "测试是否安装成功"
     java -version
     echo "安装成功"
