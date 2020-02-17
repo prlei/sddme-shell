@@ -32,5 +32,4 @@ if [ -f "$jdkfile" ]; then
     echo "测试是否安装成功"
     java -version
     echo "安装成功"
-
 fi
