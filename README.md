@@ -7,6 +7,6 @@
 
 * git命令 cmd-sugar/git_cmd.md
 
-* neovim配置 .init.vim
+* neovim配置 .init.vim    
 mac位置：~/.config/nvim/init.vim
 
